@@ -20,9 +20,19 @@ const store = (function () {
   ];
   let hideCheckedItems = false;
   let searchTerm = '';
+  const findById = id => items.find(item => (item.id === id));
+
+
+  
+  
   return {
     items,
     hideCheckedItems,
     searchTerm,
+    findById
   };
 }() );
+
+
+
+
