@@ -51,9 +51,9 @@ const store = (function () {
     items.splice(index, 1);
   };
 
+  const toggleCheckedFilter = () => store.hideCheckedItems = !store.hideCheckedItems;
 
-
-  
+  const setSearchTerm = val => store.searchTerm = val;
   
   return {
     items,
@@ -64,6 +64,8 @@ const store = (function () {
     findAndToggleChecked, 
     findAndUpdateName,
     findAndDelete,
+    toggleCheckedFilter,
+    setSearchTerm
   };
 }() );
 
