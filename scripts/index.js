@@ -11,5 +11,6 @@ function main() {
 
 $(main);
 
-console.log(store);
+
+console.log(Item);
 console.log(foo);
