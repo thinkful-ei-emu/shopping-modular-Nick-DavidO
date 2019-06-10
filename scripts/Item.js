@@ -7,5 +7,22 @@
 
 const Item = (function () {
   const foo = 'bar';
-  return {};
+  const validateName = function validateName(name){
+    if (name === ''){
+      throw new Error('Name does not exist.');
+    
+    }
+  };
+  const create = function create(name){
+    return {
+      id: cuid(),
+      name,
+      checked: false,
+    };
+  };
+
+  return {
+    validateName,
+    create
+  };
 }() );

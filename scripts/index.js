@@ -1,5 +1,5 @@
 'use strict';
-/* global shoppingList, store cuid */
+/* global shoppingList, store, cuid, Item */
 
 // eslint-disable-next-line no-unused-vars
 
